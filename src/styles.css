@@ -1,0 +1,183 @@
+/* styles.css */
+
+@font-face {
+    font-family: "Belizio";
+    font-weight: 700;
+    font-style: normal;
+    src: url("chrome-extension://__MSG_@@extension_id__/fonts/belizio-bold.ttf");
+}
+
+/* RESET */
+
+body {
+    overflow: hidden;
+}
+
+/* CUSTOM ELEMENTS */
+
+#app {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#sb_bg {
+    height: 100vh;
+    filter: brightness(50%);
+    transition: opacity 2s ease-in-out;
+}
+
+#sb_disco_logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-size: 15% !important;
+    height: 10rem;
+    margin: 3rem;
+}
+
+#sb_disco_dude {
+    font-size: 4rem;
+}
+
+#sb_disco_howto {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4%;
+    z-index: 1;
+
+    font-family: "Belizio", sans-serif;
+    font-size: calc((100vw - 3rem) / 29);
+    padding: 0 1rem;
+    color: white;
+    text-align: center;
+}
+
+/* OVERRIDE DISCO */
+
+.fade-out {
+    opacity: 0;
+}
+
+#tv {
+    background: none !important;
+    transform: translate(-50%, -50%) !important;
+    top: 50% !important;
+    left: 50% !important;
+}
+
+#tv>div {
+    width: 90% !important;
+    height: 65% !important;
+}
+
+.tv-card {
+    /* transform: scale(.9) !important; */
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.tv-card-bubble-header {
+    height: 20% !important;
+}
+
+.tv-card-text {
+    font-size: 4rem !important;
+    line-height: 7rem !important;
+    height: 60% !important;
+}
+
+#onboarding-tv-card .tv-card-text {
+    height: 80% !important;
+}
+
+.reactions {
+    height: 20% !important;
+}
+
+.rank-cards {
+    display: none !important;
+}
+
+.kudo-value-bubble {
+    display: none !important;
+}
+
+.reactions-block {
+    transform: scale(.7)
+}
+
+.avatar {
+    transform: scale(.6)
+}
+
+.tv-card-bubble {
+    width: 100% !important;
+    height: 100% !important;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22) !important;
+    min-width: 80% !important;
+    margin: 0 auto !important;
+    background-image: none !important;
+    background: white !important;
+    padding: 25px !important;
+    border-radius: 50px !important;
+}
+
+/* OVERRIDES FOR THE SB WINDOWS MACHINE */
+
+#tv>div {
+    height: 90% !important;
+    width: 140% !important;
+    transform: scale(.75) !important;
+}
+
+.reaction-block {
+    transform: scale(.8) !important;
+}
+
+.avatar {
+    transform: scale(.7) !important;
+}
+
+.tv-card-text {
+    font-size: 3rem !important;
+    line-height: 5rem !important;
+    height: 62.5% !important;
+}
+
+#onboarding-tv-card .tv-card-text {
+    height: 80% !important;
+    font-size: 2rem !important;
+    line-height: 4rem !important;
+}
+
+.user img {
+    transform: scale(.7) !important;
+}
+
+.tv-card-bubble-header {
+    height: 20% !important;
+}
+
+.reactions {
+    height: 15.5% !important;
+}
+
+.details {
+    border: 0 !important;
+}
+
+#sb_disco_howto {
+    bottom: 1rem !important;
+}
+
+#sb_disco_dude {
+    font-size: 4rem;
+}

@@ -1,0 +1,41 @@
+{
+  "name": "chrome-disco-tv",
+  "short_name": "disco",
+  "version": "0.0.0.2",
+  "description": "A Chrome extension to tweak Disco TV interface on the fly.",
+  "permissions": [
+    "storage",
+    "fontSettings"
+  ],
+  "browser_action": {
+    "default_title": "Disco",
+    "default_icon": "images/icon16.png"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "web_accessible_resources": [
+    "images/*",
+    "images/background/*",
+    "fonts/*.ttf",
+    "styles.css"
+  ],
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": [
+      "*://*.justdisco.com/tv/*"
+    ],
+    "css": ["styles.css"],
+    "js": [
+      "content.js"
+    ],
+    "run_at": "document_end"
+  }],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
